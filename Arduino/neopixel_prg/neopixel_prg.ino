@@ -22,6 +22,7 @@ void setup() {
     clock_prescale_set(clock_div_1);
   #endif
   pixels.begin();
+  //pixels.setBrightness(64);  // 64 max (0.5 amps) out of 255 (2 amps)
   pixels.setBrightness(25);
 
   // FHT library (FFT on audio jack input (resistor-pulled-down analog pin 0))
